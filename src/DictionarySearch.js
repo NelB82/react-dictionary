@@ -5,15 +5,15 @@ export default function Dictionary() {
   let [keyword, setKeyword] = useState("");
   function Search(event) {
     event.preventDefault();
-    alert("Searching");
+    alert(`Searching for ${keyword}`);
   }
 
   function handleKeywordChange(event) {
-    console.log(event);
+    setKeyword(event.target.value);
   }
   return (
     <div className="Dictionary">
-      <form onSubmit={Search}>
+      <form className="searchForm text-center" onSubmit={Search}>
         <input
           type="text"
           placeholder="Search Term"
