@@ -1,9 +1,13 @@
 import "./App.css";
-
+import DictionarySearch from "./DictionarySearch";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">Physiotherapy Dictionary</header>
+      <div className="container">
+        <header className="App-header">Physiotherapy Dictionary</header>
+        <DictionarySearch />
+        <footer className="text-center">Coded by Nele Braun</footer>
+      </div>
     </div>
   );
 }
