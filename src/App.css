@@ -1,6 +1,17 @@
+.App {
+  font-family: "Montserrat", sans-serif;
+}
+
 .App-header {
   margin: 45px 0;
   font-size: 40px;
+  font-weight: 500;
   display: block;
   text-align: center;
+}
+
+.App-footer {
+  margin-top: 30px;
+  font-weight: 300;
+  font-size: 13px;
 }

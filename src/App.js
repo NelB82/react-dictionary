@@ -6,7 +6,7 @@ function App() {
       <div className="container">
         <header className="App-header">Physiotherapy Dictionary</header>
         <DictionarySearch />
-        <footer className="text-center">Coded by Nele Braun</footer>
+        <footer className="App-footer text-center ">Coded by Nele Braun</footer>
       </div>
     </div>
   );
