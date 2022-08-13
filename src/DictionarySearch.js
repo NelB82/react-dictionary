@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./DictionarySearch.css";
 import axios from "axios";
 
+//Documentation: https://dictionaryapi.dev/
+
 export default function Dictionary() {
   let [keyword, setKeyword] = useState("");
 
