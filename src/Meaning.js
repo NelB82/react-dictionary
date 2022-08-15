@@ -6,7 +6,6 @@ export default function Meaning(props) {
     <div className="Meaning">
       <h4>{props.meaning.partOfSpeech}</h4>
       {props.meaning.definitions.map(function (definition, index) {
-        console.log(definition);
         return (
           <div key={index}>
             <p>
