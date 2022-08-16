@@ -21,3 +21,9 @@ body {
   font-weight: 300;
   font-size: 13px;
 }
+
+.githubLink {
+  color: black;
+  opacity: 50%;
+  text-decoration: none;
+}
