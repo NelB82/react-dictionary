@@ -11,11 +11,7 @@ export default function Photos(props) {
           {props.photos.map(function (photo, index) {
             return (
               <div className="col-4" key={index}>
-                <a
-                  href={photo.src.original}
-                  target="_blank"
-                  rel={"nonreferrer"}
-                >
+                <a href={photo.src.original}>
                   <img
                     src={photo.src.landscape}
                     alt="PexelImages"
