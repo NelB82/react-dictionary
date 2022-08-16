@@ -1,0 +1,10 @@
+.synonyms {
+  list-style: none;
+}
+.definition {
+  padding: 2;
+  font-weight: 12px;
+}
+.example {
+  line-height: 2.5;
+}

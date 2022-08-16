@@ -1,1 +1,30 @@
+.Dictionary h1 {
+  font-size: 15px;
+  margin-left: 330px;
+  opacity: 70%;
+}
 
+input {
+  width: 230px;
+}
+
+.searchForm {
+  color: black;
+  opacity: 70%;
+  background-color: #f5f9ee;
+  outline-width: 0.01px;
+}
+
+.searchButton {
+  color: black;
+  opacity: 70%;
+  background-color: #f5f9ee;
+  outline-width: 0.01px;
+  outline-color: white;
+  margin-left: 5px;
+  border-radius: 3px;
+}
+
+.searchButton:hover {
+  outline-color: black;
+}

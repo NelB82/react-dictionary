@@ -1,5 +1,11 @@
+body {
+  background-color: #f5f9ee;
+}
+
 .App {
   font-family: "Montserrat", sans-serif;
+  margin-left: 200px;
+  margin-right: 250px;
 }
 
 .App-header {
