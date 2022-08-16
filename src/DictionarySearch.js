@@ -34,8 +34,8 @@ export default function Dictionary(props) {
   if (loaded) {
     return (
       <div className="Dictionary">
-        <h1>Look up a word</h1>
-        <form className="searchForm text-center " onSubmit={handleSubmit}>
+        <h1 className="text-center">Look up a word</h1>
+        <form className="searchForm text-center mt-4 " onSubmit={handleSubmit}>
           <input
             type="text"
             placeholder="Search Term"
