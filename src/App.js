@@ -7,13 +7,13 @@ function App() {
         <header className="App-header">Dictionary</header>
         <DictionarySearch defaultKeyword="variety" />
         <footer className="App-footer text-center ">
-          <div>Coded by Nele Braun | open sourced on</div>
-
+          Coded by Nele Braun | open sourced on
           <a
             href="https://github.com/NelB82/react-dictionary"
             className="githubLink"
           >
-            githubs
+            {" "}
+            github
           </a>
         </footer>
       </div>
