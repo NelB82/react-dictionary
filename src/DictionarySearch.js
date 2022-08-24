@@ -22,23 +22,21 @@ export default function Dictionary(props) {
     setPhotos(response.data.photos);
   }
 
-  function Search() {
+  function search() {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
     axios.get(apiUrl).then(handleDictionaryResponse);
+
+    let pexelsApiKey =
+      "563492ad6f91700001000001d622400a4ff2413eb3345c6010a271bf";
+    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=3`;
+    let headers = { Authorization: `Bearer ${pexelsApiKey}` };
+
+    axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
   }
-
-  const pexelsApiKey =
-    "563492ad6f91700001000001d622400a4ff2413eb3345c6010a271bf";
-
-  let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=3`;
-
-  axios
-    .get(pexelsApiUrl, { headers: { Authorization: `Bearer${pexelsApiKey}` } })
-    .then(handlePexelsResponse);
 
   function handleSubmit(event) {
     event.preventDefault();
-    Search();
+    search();
   }
 
   function handleKeywordChange(event) {
@@ -46,7 +44,7 @@ export default function Dictionary(props) {
   }
   function load() {
     setLoaded(true);
-    Search();
+    search();
   }
 
   if (loaded) {
@@ -58,7 +56,7 @@ export default function Dictionary(props) {
             type="text"
             placeholder="Search Term"
             onChange={handleKeywordChange}
-          ></input>
+          />
           <button className="searchButton">Search</button>
         </form>
 
